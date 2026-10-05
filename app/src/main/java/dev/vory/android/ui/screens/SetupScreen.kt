@@ -57,7 +57,7 @@ import dev.vory.android.ui.theme.OneUi
 import dev.vory.android.vm.SetupViewModel
 
 /**
- * Gateway setup wizard: name, URL (trailing slash + /api/* stripped), auth mode,
+ * Gateway setup wizard: name, URL (trailing slash + /api/... stripped), auth mode,
  * optional Cloudflare Access, and the 3-leg Test Connection (status JSON,
  * credential accepted, wss awaiting gateway.ready). Save enables only when all pass.
  */
