@@ -184,7 +184,7 @@ private fun VoryNav(appVm: AppViewModel) {
         // Settings sub-screens (mirror the API map).
         SettingsSubScreens.entries.forEach { entry ->
             composable(entry.route) {
-                entry.content(onBack = { nav.popBackStack() }, nav = nav)
+                entry.content({ nav.popBackStack() }, nav)
             }
         }
     }
