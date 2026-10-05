@@ -7,6 +7,7 @@ plugins {
 android {
     namespace = "dev.vory.android"
     compileSdk = 36
+    buildToolsVersion = "36.0.0"
 
     defaultConfig {
         applicationId = "dev.vory.android"
