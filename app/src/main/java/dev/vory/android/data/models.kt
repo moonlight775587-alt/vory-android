@@ -12,7 +12,7 @@ enum class AuthMode { SESSION_TOKEN, USERNAME_PASSWORD, BROWSER_OIDC }
 data class Gateway(
     val id: String,
     val name: String,
-    /** Normalised: no trailing slash, no /api/* suffix. */
+    /** Normalised: no trailing slash, no /api/... suffix. */
     val baseUrl: String,
     val authMode: AuthMode,
     /** Username for USERNAME_PASSWORD mode (password is never stored). */
