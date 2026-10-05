@@ -265,7 +265,7 @@ fun ChatScreen(
                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp),
                     horizontalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
-                    androidx.compose.foundation.lazy.items(attachedImages, key = { it.toString() }) { uri ->
+                    items(attachedImages, key = { it.toString() }) { uri ->
                         Box {
                             coil.compose.AsyncImage(
                                 model = uri,
